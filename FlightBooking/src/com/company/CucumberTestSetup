@@ -1,0 +1,30 @@
+ @Given("^I launch the Flight Booking Portal$")
+    public void startTestWebBrowser(String landObjectURL) throws Exception
+   {
+       StartTest myTestRunner = (StartTest)CucumberRunne.testRunner.get();
+       String testEnvironment = myTestRunner.getTestEnviornment();
+       JSONObject yamlJson = myTestRunner.getYAMLObject();
+       storedObjectURL = landingObjectURL;
+       String envValue= "";
+       boolean configEnables = false;
+       String urlValue;
+       try {
+           urlValue = Jsonpath.read(yamlJson.toString(), jsonPath:"$.ObjectRepository.");
+           this.LOGGER.info("\nURL: " + urlValue);
+       }
+       catch(Exception e)
+       {
+           try {
+               envValue = JsonPAth.read(YAMLUtlity.readYAML(yamlfile :"config.yaml").toString());
+           }
+           catch(Exception e1)
+           {
+               urlValue ="https://www.google.com/";
+               this.LOGGER.info("\nURL not Found in YAML, Heading to google");
+           }
+         Browser browser = myTestRunner.getBrowser();
+           myTestRunner.setUIOperation(browser);
+           UIOperation operaion = myTestRunner.getUIOperation();
+
+       }
+   }

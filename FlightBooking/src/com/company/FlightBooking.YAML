@@ -1,0 +1,58 @@
+Object Repository:
+    FlightBooking: https://www.makemytrip.com/flights/
+
+    MainPage:
+      Login:
+        Name: button
+        xpath: //*[@id="SW"]/div[1]/div[1]/ul/li[6]
+      MobNum_NewUser:
+        Name: textbox
+        xpath: //*[@id="username"]
+      Password_FrstUser:
+         Name: textbox
+         xpath: //
+      Policycheck:
+         Name: checkbox
+         xpath: //*[@id="SW"]/div[1]/div[2]/div[2]/section/form/div[3]/label
+      VerifyCreate_PWD:
+          Name: button
+          xpath: //*[@id="SW"]/div[1]/div[2]/div[2]/section/form/div[4]/button
+      OTP:
+          Name: textbox
+          xpath: //*[@id="SW"]/div[1]/div[2]/div[2]/section/form/div[1]/div/input
+      ContinueBtn:
+         Name: button
+         xpath: //*[@id="SW"]/div[1]/div[2]/div[2]/section/form/div[2]/button\
+      VerifyCreateAccount_OTP:
+          Name: button
+          xpath: //*[@id="SW"]/div[1]/div[2]/div[2]/section/form/div[4]
+      Continue_Existinguser:
+          Name: Button
+          xpath: //*[@id="SW"]/div[1]/div[2]/div[2]/section/form/div[2]/button
+      Login_ExistingUser:
+           Name: Button
+           xpath : //*[@id="SW"]/div[1]/div[2]/div[2]/section/form/div[2]
+      AccntCreatedSuccessMsg:
+           Name: SuccessMsg
+           xpath: //*[@id="SW"]/div[1]/div[2]/div[2]/section/div[2]/p/span[2]
+      Password:
+         Name: TextField
+         xpath: //*[@id="password"]
+      OneWay:
+         Name: radiobutton
+         xpath: //*[@id="root"]/div/div[2]/div/div/div[1]/ul/li[1]
+      FromPoint:
+        Name: checkbox
+        xpath: //*[@id="fromCity"]
+      ToPoint:
+        Name: checkbox
+        xpath: //*[@id="toCity"]
+      FLightSearch:
+         Name: button
+         xpath: //*[@id="root"]/div/div[2]/div/div/div[2]/p/a
+      DurationSort:
+          Name: text
+          xpath: //*[@id="sorting-togglers"]/div[3]
+       DepartureSort:
+          Name: text
+          xpath: //*[@id="sorting-togglers"]/div[2]
